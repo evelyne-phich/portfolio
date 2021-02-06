@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/career-project.css" />
+    <title>Evelyne PHICH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="backgroundClosingSideNav isDisabled" onclick="closeSideNav()"></div>
+    <nav id="sideNav" class="sideNav">
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/career/5">Parcours professionnel</a></li>
+            <li><a class="active" href="/project/1">Projets personnels</a></li>
+        </ul>
+    </nav>
+    <nav class="navBar">
+        <div class="navigation">
+            <button class="menuButton" onclick="openSideNav()"> <img class="menuIcon" src="/images/menu-24px.svg">
+            </button>
+        </div>
+        <div class="contact">
+            <a class="gmail" href="mailto:evelyne.phich@gmail.com"> <img src="/images/email-24px.svg" alt="Email" /></a>
+            <a target="_blank" class="linkedIn" href="https://www.linkedin.com/in/evelyne-phich-26464370/"><img
+                    src="/images/iconmonstr-linkedin-3.svg" alt="LinkedIn" /></a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="date">
+            11/2020
+        </div>
+        <hr />
+        <div class="content">
+            <div class="projectName" style="color:rgb(241, 97, 97);">
+                <%- projectName %>
+            </div>
+            <p class="description">
+                <%- description %>
+            </p>
+            <div class="flex">
+                <p class="link">
+                    <%- link %>
+                </p>
+                <div>
+                    <a target="_blank" class="logoLesBonnesAdressesdEvy" href="<%- linkToProject %>">
+                        <%- logo %>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

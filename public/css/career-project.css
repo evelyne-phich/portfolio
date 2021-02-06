@@ -1,0 +1,161 @@
+.background {
+  background-color: rgb(54, 54, 54);
+}
+.backgroundClosingSideNav {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 80px;
+  bottom: 100px;
+  left: 322px;
+  width: 100%;
+  z-index: 1;
+}
+.isDisabled {
+  z-index: -1;
+}
+.container {
+  height: calc(100vh - 80px - 100px); /*80px = navBar 100px = footer*/
+}
+.date {
+  font-size: 80px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.companyName,
+.projectName {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.jobName,
+.description,
+.link {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.jobTasks li {
+  list-style-position: outside;
+  list-style-type: circle;
+}
+.jobTasks {
+  margin: 0;
+  font-size: 24px;
+  line-height: 200%;
+}
+.pagination {
+  display: inline-block;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+.pagination a {
+  height: 24px;
+  padding: 8px 32px;
+  background-image: url("/images/radio_button_unchecked-24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pagination .active {
+  background-image: url("/images/circle-24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pagination a:hover:not(.active) {
+  background-image: url("/images/radio_button_checked-24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.school {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.degree {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.logoLesBonnesAdressesdEvy {
+  font-size: 60px;
+  left: 100%;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+}
+
+@keyframes move {
+  0% {
+    transform: rotateZ(-30deg);
+  }
+  50% {
+    transform: rotateZ(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .date {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: hidden;
+  }
+  .date {
+    font-size: 24px;
+  }
+  .companyName,
+  .projectName {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .jobName,
+  .description,
+  .link {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  .jobTasks {
+    font-size: 14px;
+  }
+  .school {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  .degree {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .logoLesBonnesAdressesdEvy {
+    font-size: 30px;
+  }
+}
