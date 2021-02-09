@@ -32,11 +32,11 @@
     </nav>
     <div class="container">
         <div class="date">
-            11/2020
+            <%- date %>
         </div>
         <hr />
         <div class="content">
-            <div class="projectName" style="color:rgb(241, 97, 97);">
+            <div class="projectName" style="color: <%- projectNameColor %>">
                 <%- projectName %>
             </div>
             <p class="description">
@@ -47,13 +47,17 @@
                     <%- link %>
                 </p>
                 <div>
-                    <a target="_blank" class="logoLesBonnesAdressesdEvy" href="<%- linkToProject %>">
+                    <a target="_blank" class="linkToProject" href="<%- linkToProject %>">
                         <%- logo %>
                     </a>
                 </div>
             </div>
         </div>
     </div>
+    <footer class="pagination">
+        <a class="<% if (activePageNumber===2) { %>active <% } %>" href="/project/2"></a>
+        <a class="<% if (activePageNumber===1) { %>active <% } %>" href="/project/1"></a>
+    </footer>
     <script src="/js/index.js"></script>
 </body>
 

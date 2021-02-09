@@ -112,6 +112,20 @@ app.get("/career/1", (request, response) => {
 
 // Projets personnels
 
+app.get("/project/2", (request, response) => {
+  response.render("project", {
+    date: "02/2021",
+    projectName: "Tic-Tac-Toe",
+    projectNameColor: "rgb(196, 31, 31)",
+    description:
+      "A la recherche d'un petit jeu rapide à 2 pour passer le temps ?",
+    link: "Par ici &#x2794;",
+    linkToProject: "https://tic-tac-toe-evysgames.herokuapp.com/",
+    logo:
+      '<img class="logoTicTacToe" src="https://res.cloudinary.com/dvpcjyb48/image/upload/v1612905350/tic-tac-toe_gjrmla.png">',
+    activePageNumber: 2,
+  });
+});
 app.get("/project/1", (request, response) => {
   response.render("project", {
     date: "11/2020",
@@ -119,9 +133,9 @@ app.get("/project/1", (request, response) => {
     projectNameColor: "rgb(241, 97, 97)",
     description:
       "A la recherche d'un endroit pour combler une petite ou une grosse faim ?",
-    link: "C'est par ici &#x2794;",
+    link: "Par ici &#x2794;",
     linkToProject: "https://les-bonnes-adresses-d-evy.herokuapp.com/",
-    logo: "&#127836;",
+    logo: '<div class="logoLesBonnesAdressesdEvy"> &#127836;</div>',
     activePageNumber: 1,
   });
 });

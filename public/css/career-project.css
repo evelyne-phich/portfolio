@@ -15,6 +15,10 @@
 .isDisabled {
   z-index: -1;
 }
+.flex {
+  display: flex;
+  align-items: center;
+}
 .container {
   height: calc(100vh - 80px - 100px); /*80px = navBar 100px = footer*/
 }
@@ -87,21 +91,17 @@
   font-size: 40px;
   margin-bottom: 50px;
 }
+.linkToProject {
+  text-decoration: none;
+}
 .logoLesBonnesAdressesdEvy {
   font-size: 60px;
-  left: 100%;
   animation-name: move;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  display: flex;
-  justify-content: center;
-  width: 100px;
-  text-decoration: none;
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
-.flex {
-  display: flex;
-}
-
 @keyframes move {
   0% {
     transform: rotateZ(-30deg);
@@ -112,6 +112,11 @@
   100% {
     transform: rotate(-30deg);
   }
+}
+.logoTicTacToe {
+  height: 60px;
+  width: 60px;
+  margin-left: 10px;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
