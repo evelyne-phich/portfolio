@@ -18,6 +18,7 @@ app.get("/", (request, response) => {
   response.render("index", {
     fullName: "Evelyne PHICH",
     quote: '"Curiosity keeps leading us down new paths."',
+    activePage: "Accueil",
   });
 });
 
@@ -38,6 +39,7 @@ app.get("/career/5", (request, response) => {
     ],
     activePageNumber: 5,
     activeCareerBackground: "/css/career-5.css",
+    activePage: "Parcours professionnel",
   });
 });
 app.get("/career/4", (request, response) => {
@@ -56,6 +58,7 @@ app.get("/career/4", (request, response) => {
     ],
     activePageNumber: 4,
     activeCareerBackground: "/css/career-4.css",
+    activePage: "Parcours professionnel",
   });
 });
 app.get("/career/3", (request, response) => {
@@ -71,6 +74,7 @@ app.get("/career/3", (request, response) => {
     ],
     activePageNumber: 3,
     activeCareerBackground: "/css/career-3.css",
+    activePage: "Parcours professionnel",
   });
 });
 app.get("/career/2", (request, response) => {
@@ -89,6 +93,7 @@ app.get("/career/2", (request, response) => {
       "Master Comptabilité, Contrôle, Audit en apprentissage - Mention bien",
     activePageNumber: 2,
     activeCareerBackground: "/css/career-2.css",
+    activePage: "Parcours professionnel",
   });
 });
 app.get("/career/1", (request, response) => {
@@ -107,6 +112,7 @@ app.get("/career/1", (request, response) => {
       "Licence Comptabilité, Contrôle, Audit en apprentissage - Mention bien",
     activePageNumber: 1,
     activeCareerBackground: "/css/career-1.css",
+    activePage: "Parcours professionnel",
   });
 });
 
@@ -124,6 +130,7 @@ app.get("/project/2", (request, response) => {
     logo:
       '<img class="logoTicTacToe" src="https://res.cloudinary.com/dvpcjyb48/image/upload/v1612905350/tic-tac-toe_gjrmla.png">',
     activePageNumber: 2,
+    activePage: "Projets personnels",
   });
 });
 app.get("/project/1", (request, response) => {
@@ -137,6 +144,7 @@ app.get("/project/1", (request, response) => {
     linkToProject: "https://les-bonnes-adresses-d-evy.herokuapp.com/",
     logo: '<div class="logoLesBonnesAdressesdEvy"> &#127836;</div>',
     activePageNumber: 1,
+    activePage: "Projets personnels",
   });
 });
 
