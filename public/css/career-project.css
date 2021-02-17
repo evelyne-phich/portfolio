@@ -23,7 +23,7 @@
   height: calc(100vh - 80px - 100px); /*80px = navBar 100px = footer*/
 }
 .date {
-  font-size: 80px;
+  font-size: 60px;
 }
 .content {
   display: flex;
@@ -32,17 +32,17 @@
 }
 .companyName,
 .projectName {
-  font-size: 60px;
-  font-weight: bold;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .jobName,
 .description,
 .link {
-  font-size: 40px;
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .jobTasks li {
   list-style-position: outside;
@@ -50,7 +50,7 @@
 }
 .jobTasks {
   margin: 0;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 200%;
 }
 .pagination {
@@ -83,13 +83,13 @@
   background-position: center;
 }
 .school {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .degree {
-  font-size: 40px;
-  margin-bottom: 50px;
+  font-size: 24px;
+  margin-bottom: 40px;
 }
 .linkToProject {
   text-decoration: none;
@@ -118,6 +118,10 @@
   width: 60px;
   margin-left: 10px;
 }
+.logoLesBonnesRecettesdEvy {
+  font-size: 60px;
+  margin-left: 10px;
+}
 
 @media (min-width: 481px) and (max-width: 1024px) {
   .date {
@@ -137,7 +141,6 @@
   .companyName,
   .projectName {
     font-size: 18px;
-    font-weight: bold;
     margin-top: 25px;
     margin-bottom: 25px;
   }
@@ -159,8 +162,5 @@
   .degree {
     font-size: 16px;
     margin-bottom: 25px;
-  }
-  .logoLesBonnesAdressesdEvy {
-    font-size: 30px;
   }
 }

@@ -1,6 +1,19 @@
 let projects = [
   {
     date: "02/2021",
+    projectName: "Les bonnes recettes d'Evy",
+    projectNameColor: "rgb(182, 7, 65)",
+    description: "Envie de se régaler avec de la bonne cuisine faite maison ?",
+    link: "Par ici &#x2794;",
+    linkToProject: "https://les-bonnes-recettes-d-evy.herokuapp.com/",
+    logo: '<div class="logoLesBonnesRecettesdEvy">&#127859;</div>',
+    activePageNumber: 3,
+    activePage: "Projets personnels",
+    url: "/project/3",
+    page: "project",
+  },
+  {
+    date: "02/2021",
     projectName: "Tic-Tac-Toe",
     projectNameColor: "rgb(196, 31, 31)",
     description:

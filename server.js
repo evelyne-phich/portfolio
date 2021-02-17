@@ -36,6 +36,8 @@ for (let career of careers) {
       activePageNumber: career.activePageNumber,
       activeCareerBackground: career.activeCareerBackground,
       activePage: career.activePage,
+      school: career.school,
+      degree: career.degree,
     });
   });
 }
