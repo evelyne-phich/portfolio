@@ -76,7 +76,7 @@ button {
   text-align: center;
   height: 100vh;
   width: 322px;
-  position: absolute;
+  position: fixed;
   left: -322px;
   top: 0px;
   background-color: rgb(1, 1, 39);
