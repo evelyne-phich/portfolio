@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  padding: 0 48px;
   font-family: "Roboto";
   color: white;
+  height: 100vh;
 }
 button {
   border: none;
@@ -29,22 +29,13 @@ button {
   /* Corrects inability to style clickable `input` types in iOS */
   -webkit-appearance: none;
 }
-.background {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100vh;
-  width: 100%;
-  z-index: -1;
-  filter: brightness(0.2);
-}
 .menuButton {
   height: 32px;
   opacity: 0.7;
   transition: opacity ease-in-out 125ms;
+}
+.menuButton:hover {
+  opacity: 1;
 }
 .menuIcon {
   height: 32px;
@@ -56,6 +47,9 @@ button {
   align-items: center;
   font-size: 24px;
   justify-content: space-between;
+  padding: 0 50px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .navBar a {
   opacity: 0.7;
@@ -79,7 +73,7 @@ button {
 }
 .sideNav {
   height: 100vh;
-  width: 320px;
+  width: 322px;
   position: absolute;
   left: -322px;
   top: 0px;
@@ -106,11 +100,20 @@ button {
   font-size: 24px;
 }
 .sideNav li a.active {
-  background-color: rgb(177, 209, 247);
+  background-color: rgb(199 208 255 / 65%);
   color: rgb(2, 2, 51);
 }
 li a:hover:not(.active) {
   background-color: #ffffffee;
   transition: 0.3s;
   color: rgb(2, 2, 51);
+}
+.backgroundClosingSideNav {
+  left: 322px;
+  height: 100vh;
+  width: calc(100% - 322px);
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
 }

@@ -1,34 +1,34 @@
 .background {
-  background-color: rgb(54, 54, 54);
-}
-.backgroundClosingSideNav {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: fixed;
-  top: 80px;
-  bottom: 100px;
-  left: 322px;
-  width: 100%;
-  z-index: 1;
-}
-.isDisabled {
-  z-index: -1;
-}
-.flex {
+  background-color: rgb(1, 1, 39);
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .container {
-  height: calc(100vh - 80px - 100px); /*80px = navBar 100px = footer*/
+  background-color: #fff7f7f2;
+  color: rgb(1, 1, 39);
+  border-radius: 16px;
+  box-shadow: rgb(255 255 255 / 35%) 0px 5px 15px;
+  margin: 60px auto;
+  overflow: hidden;
+}
+.container:hover {
+  transform: scale(1.1)
 }
 .date {
   font-size: 60px;
+  font-weight: bold;
+  background-color: #fff7f7f2;
+  color: rgb(1, 1, 39);
 }
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgb(1 1 39 / 90%);
+  color: white;
+  padding: 0 40px 40px 40px;
 }
 .companyName,
 .projectName {
@@ -44,52 +44,22 @@
   font-weight: bold;
   margin-bottom: 40px;
 }
-.jobTasks li {
-  list-style-position: outside;
-  list-style-type: circle;
+.jobTasks {
+  list-style-type: none;
 }
 .jobTasks {
   margin: 0;
   font-size: 18px;
   line-height: 200%;
 }
-.pagination {
-  display: inline-block;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-}
-.pagination a {
-  height: 24px;
-  padding: 8px 32px;
-  background-image: url("/images/radio_button_unchecked-24px.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.pagination .active {
-  background-image: url("/images/circle-24px.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.pagination a:hover:not(.active) {
-  background-image: url("/images/radio_button_checked-24px.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .school {
   font-size: 40px;
   font-weight: bold;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 .degree {
   font-size: 24px;
-  margin-bottom: 40px;
 }
 .linkToProject {
   text-decoration: none;

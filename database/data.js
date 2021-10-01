@@ -1,6 +1,6 @@
 const careers = [
   {
-    date: "09/2019 - Aujourd'hui",
+    date: "09/2019 - 06/2021",
     companyName: "LCL",
     companyNameColor: "rgb(248, 194, 15)",
     jobName: "Analyste comptable",
@@ -11,11 +11,6 @@ const careers = [
       "Contrôle comptable, justification des comptes et surveillance des suspens",
       "Participation à des projets comptables/réglementaires (ex : IFRS 16)",
     ],
-    activePageNumber: 5,
-    activeCareerBackground: "/css/career-5.css",
-    activePage: "Parcours professionnel",
-    url: "/career/5",
-    page: "career",
   },
   {
     date: "10/2017 - 09/2019",
@@ -30,27 +25,17 @@ const careers = [
       "Etablissement d’états intermédiaires et de prévisionnels",
       "Déclarations d’IRPP (Impôt sur le Revenu des Personnes Physiques)",
     ],
-    activePageNumber: 4,
-    activeCareerBackground: "/css/career-4.css",
-    activePage: "Parcours professionnel",
-    url: "/career/4",
-    page: "career",
   },
   {
     date: "11/2016 - 10/2017",
     companyName: "Groupe Y Nexia",
-    companyNameColor: "rgb(24, 207, 207)",
+    companyNameColor: "rgb(8 173 173)",
     jobName: "Assistante comptable",
     jobTasks: [
       "Déplacements mensuels en clientèle",
       "Tenue comptable et déclarations fiscales",
       "Etablissement des comptes annuels et des liasses fiscales",
     ],
-    activePageNumber: 3,
-    activeCareerBackground: "/css/career-3.css",
-    activePage: "Parcours professionnel",
-    url: "/career/3",
-    page: "career",
   },
   {
     date: "09/2014 - 08/2016",
@@ -65,30 +50,20 @@ const careers = [
     school: "IAE Gustave Eiffel",
     degree:
       "Master Comptabilité, Contrôle, Audit en apprentissage - Mention bien",
-    activePageNumber: 2,
-    activeCareerBackground: "/css/career-2.css",
-    activePage: "Parcours professionnel",
-    url: "/career/2",
-    page: "career",
   },
   {
     date: "10/2013 - 08/2014",
     companyName: "Siemens",
-    companyNameColor: "rgb(27, 209, 209)",
+    companyNameColor: "rgb(8 173 173)",
     jobName: "Analyste crédit clients",
     jobTasks: [
       "Gestion et analyse d’un portefeuille de comptes clients",
-      "Participation au recouvrement et à l’amélioration du DSO <i>(Days Sales Outstanding)</i>",
+      "Participation au recouvrement et à l’amélioration du DSO (Days Sales Outstanding)",
       "Suivi des litiges et remises de chèques",
     ],
     school: "IAE Gustave Eiffel",
     degree:
       "Licence Comptabilité, Contrôle, Audit en apprentissage - Mention bien",
-    activePageNumber: 1,
-    activeCareerBackground: "/css/career-1.css",
-    activePage: "Parcours professionnel",
-    url: "/career/1",
-    page: "career",
   },
 ];
 
@@ -101,10 +76,6 @@ const projects = [
     link: "Par ici &#x2794;",
     linkToProject: "https://les-bonnes-recettes-d-evy.herokuapp.com/",
     logo: '<div class="logoLesBonnesRecettesdEvy">&#127859;</div>',
-    activePageNumber: 3,
-    activePage: "Projets personnels",
-    url: "/project/3",
-    page: "project",
   },
   {
     date: "02/2021",
@@ -115,10 +86,6 @@ const projects = [
     link: "Par ici &#x2794;",
     linkToProject: "https://tic-tac-toe-evysgames.herokuapp.com/",
     logo: '<img class="logoTicTacToe" src="https://res.cloudinary.com/dvpcjyb48/image/upload/v1612905350/tic-tac-toe_gjrmla.png">',
-    activePageNumber: 2,
-    activePage: "Projets personnels",
-    url: "/project/2",
-    page: "project",
   },
   {
     date: "11/2020",
@@ -129,10 +96,6 @@ const projects = [
     link: "Par ici &#x2794;",
     linkToProject: "https://les-bonnes-adresses-d-evy.herokuapp.com/",
     logo: '<div class="logoLesBonnesAdressesdEvy"> &#127836;</div>',
-    activePageNumber: 1,
-    activePage: "Projets personnels",
-    url: "/project/1",
-    page: "project",
   },
 ];
 

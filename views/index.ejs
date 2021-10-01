@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <div class="background"></div>
-    <div class="backgroundClosingSideNav" onclick="closeSideNav()"></div>
-    <%- include("./partials/sideNav") -%>
+    <div class="background">
+        <div id="backgroundClosingSideNav" onclick="closeSideNav()"></div>
+        <%- include("./partials/sideNav") -%>
         <nav class="navBar">
             <div class="navigation">
                 <button class="menuButton" onclick="openSideNav()"> <img class="menuIcon" src="/images/menu-24px.svg" />
@@ -39,7 +39,8 @@
                 </div>
             </div>
         </div>
-        <script src="/js/index.js"></script>
+    </div>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
