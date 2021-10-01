@@ -11,50 +11,41 @@
 </head>
 
 <body>
-    <div class="background"></div>
-    <div class="backgroundClosingSideNav isDisabled" onclick="closeSideNav()"></div>
-    <%- include("./partials/sideNav") -%>
-        <nav class="navBar">
-            <div class="navigation">
-                <button class="menuButton" onclick="openSideNav()"> <img class="menuIcon" src="/images/menu-24px.svg">
-                </button>
-            </div>
-            <div class="contact">
-                <a class="gmail" href="mailto:evelyne.phich@gmail.com"> <img src="/images/email-24px.svg"
-                        alt="Email" /></a>
-                <a target="_blank" class="linkedIn" href="https://www.linkedin.com/in/evelyne-phich-26464370/"><img
-                        src="/images/iconmonstr-linkedin-3.svg" alt="LinkedIn" /></a>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="date">
-                <%- date %>
-            </div>
-            <hr />
-            <div class="content">
-                <div class="projectName" style="color: <%- projectNameColor %>">
-                    <%- projectName %>
-                </div>
-                <p class="description">
-                    <%- description %>
-                </p>
-                <div class="flex">
-                    <p class="link">
-                        <%- link %>
-                    </p>
-                    <div>
-                        <a target="_blank" class="linkToProject" href="<%- linkToProject %>">
-                            <%- logo %>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="background">
+      <div id="backgroundClosingSideNav" onclick="closeSideNav()"></div>
+      <%- include("./partials/sideNav") -%>
+      <nav class="navBar">
+        <div class="navigation">
+          <button class="menuButton" onclick="openSideNav()">
+            <img class="menuIcon" src="/images/menu-24px.svg" />
+          </button>
         </div>
-        <footer class="pagination">
-            <a class="<% if (activePageNumber===3) { %>active<% } %>" href="/project/3"></a>
-            <a class="<% if (activePageNumber===2) { %>active<% } %>" href="/project/2"></a>
-            <a class="<% if (activePageNumber===1) { %>active<% } %>" href="/project/1"></a>
-        </footer>
+        <div class="contact">
+          <a class="gmail" href="mailto:evelyne.phich@gmail.com">
+            <img src="/images/email-24px.svg" alt="Email"
+          /></a>
+          <a
+            target="_blank"
+            class="linkedIn"
+            href="https://www.linkedin.com/in/evelyne-phich-26464370/"
+            ><img src="/images/iconmonstr-linkedin-3.svg" alt="LinkedIn"
+          /></a>
+        </div>
+      </nav>
+      <div class="projectsContainer">
+        <% for (const project of projects) { %>
+          <div class="container">
+            <div class="date"><%= project.date %></div>
+            <div class="content">
+              <div class="projectName" style="color: <%= project.projectNameColor %>">
+                <%= project.projectName %>
+              </div>
+              <div class="description"><%= project.description %></div>
+            </div>
+          </div>
+        <% } %>
+      </div>
+    </div>
         <script src="/js/index.js"></script>
 </body>
 

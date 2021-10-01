@@ -10,7 +10,7 @@
   color: rgb(1, 1, 39);
   border-radius: 16px;
   box-shadow: rgb(255 255 255 / 35%) 0px 5px 15px;
-  margin: 60px auto;
+  margin: 48px;
   overflow: hidden;
   transition: transform .2s;
 }
@@ -22,6 +22,7 @@
   font-weight: bold;
   background-color: #fff7f7f2;
   color: rgb(1, 1, 39);
+  padding: 16px;
 }
 .content {
   display: flex;
@@ -29,7 +30,7 @@
   justify-content: center;
   background-color: rgb(1 1 39 / 90%);
   color: white;
-  padding: 0 40px 40px 40px;
+  padding: 24px;
 }
 .companyName,
 .projectName {
@@ -47,11 +48,10 @@
 }
 .jobTasks {
   list-style-type: none;
-}
-.jobTasks {
+  padding: 0;
   margin: 0;
   font-size: 18px;
-  line-height: 200%;
+  line-height: 1.5;
 }
 .school {
   font-size: 40px;
@@ -101,11 +101,6 @@
 }
 
 @media (max-width: 480px) {
-  body {
-    padding-left: 10px;
-    padding-right: 10px;
-    overflow-y: hidden;
-  }
   .date {
     font-size: 24px;
   }
