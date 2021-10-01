@@ -37,10 +37,9 @@
           <div class="container">
             <div class="date"><%= project.date %></div>
             <div class="content">
-              <div class="projectName" style="color: <%= project.projectNameColor %>">
-                <%= project.projectName %>
+              <div class="projectName">
+                <a target="_blank" class="linkToProject" href="<%= project.linkToProject %>" style="color: <%= project.projectNameColor %>"><%= project.projectName %></a>
               </div>
-              <div class="description"><%= project.description %></div>
             </div>
           </div>
         <% } %>

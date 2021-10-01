@@ -8,7 +8,7 @@ const { careers, projects } = require("../database/data");
 router.get("/", (request, response) => {
   response.render("index", {
     fullName: "Evelyne PHICH",
-    quote: '"Curiosity keeps leading us down new paths."',
+    job: "Développeuse fullstack JS",
     activePage: "Accueil",
   });
 });

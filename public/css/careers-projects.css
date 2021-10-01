@@ -4,6 +4,15 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  min-height: 100vh;
+}
+.navBar {
+  z-index: 1;
+  background-color: rgb(1, 1, 39);
+  box-shadow: 10px 5px 5px rgb(1 1 39);
+}
+.careersContainer, .projectsContainer {
+  padding-top: 80px;
 }
 .container {
   background-color: #fff7f7f2;
@@ -39,9 +48,14 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.linkToProject {
+  transition: color .2s;
+}
+.linkToProject:hover {
+  text-shadow: rgb(0 0 0) 1px 0 10px;
+}
 .jobName,
-.description,
-.link {
+.description {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 40px;
@@ -64,34 +78,6 @@
 }
 .linkToProject {
   text-decoration: none;
-}
-.logoLesBonnesAdressesdEvy {
-  font-size: 60px;
-  animation-name: move;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  margin-left: 10px;
-  margin-bottom: 20px;
-}
-@keyframes move {
-  0% {
-    transform: rotateZ(-30deg);
-  }
-  50% {
-    transform: rotateZ(30deg);
-  }
-  100% {
-    transform: rotate(-30deg);
-  }
-}
-.logoTicTacToe {
-  height: 60px;
-  width: 60px;
-  margin-left: 10px;
-}
-.logoLesBonnesRecettesdEvy {
-  font-size: 60px;
-  margin-left: 10px;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
