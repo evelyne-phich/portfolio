@@ -37,7 +37,7 @@
   font-size: 32px;
   font-weight: bold;
   text-align: right;
-  color: rgb(1, 1, 39)
+  color: white
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -73,7 +73,7 @@
     }
 
     to {
-      margin-top: 550px;
+      margin-top: 450px;
       opacity: 1;
     }
   }
