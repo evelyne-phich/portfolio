@@ -1,16 +1,11 @@
 const express = require("express");
-const bodyParser = require("body-parser");
-const { careers } = require("./resources/careers");
-const { projects } = require("./resources/projects");
 
-const urlencodedParser = bodyParser.urlencoded({ extended: false });
+const { careers, projects } = require("./database/data");
 
-const PORT = process.env.PORT || 3002;
+const PORT = 3000;
 
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.json());
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 
