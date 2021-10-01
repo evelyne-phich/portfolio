@@ -111,9 +111,8 @@ li a:hover:not(.active) {
   color: rgb(2, 2, 51);
 }
 .backgroundClosingSideNav {
-  left: 322px;
   height: 100vh;
-  width: calc(100% - 322px);
+  width: 100%;
   position: fixed;
   z-index: 1;
   cursor: pointer;
