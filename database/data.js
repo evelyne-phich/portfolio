@@ -1,5 +1,16 @@
 const careers = [
   {
+    date: "08/2021 - 02/2022",
+    companyName: "O'clock",
+    companyNameColor: "#09B99E",
+    jobName: "Formation développeur fullstack JS",
+    jobTasks: [
+      "3 mois de socle : HTML, CSS, JavaScript, Node.js, Postgres, Git",
+      "1 mois de spécialisation : React",
+      "1 mois de projet professionnel",
+    ],
+  },
+  {
     date: "09/2019 - 06/2021",
     companyName: "LCL",
     companyNameColor: "rgb(248, 194, 15)",
