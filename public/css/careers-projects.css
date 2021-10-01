@@ -12,6 +12,7 @@
   box-shadow: rgb(255 255 255 / 35%) 0px 5px 15px;
   margin: 60px auto;
   overflow: hidden;
+  transition: transform .2s;
 }
 .container:hover {
   transform: scale(1.1)
