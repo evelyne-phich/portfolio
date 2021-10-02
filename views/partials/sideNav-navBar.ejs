@@ -1,0 +1,28 @@
+<nav id="sideNav" class="sideNav">
+    <ul>
+        <li><a class="<% if (activePage==='Accueil') { %>active<%} %>" href="/">Accueil</a></li>
+        <li><a class="<% if (activePage==='Parcours professionnel') { %>active<%} %>" href="/careers">Parcours
+                professionnel</a></li>
+        <li><a class="<% if (activePage==='Projets personnels') { %>active<%} %>" href="/projects">Projets
+                personnels</a></li>
+    </ul>
+</nav>
+<div id="backgroundClosingSideNav" onclick="closeSideNav()"></div>
+<nav class="navBar">
+    <div class="navigation">
+        <button name="menuButton" class="menuButton" onclick="openSideNav()">
+            <img class="menuIcon" src="/images/menu-24px.svg" alt="menuIcon"/>
+        </button>
+    </div>
+    <div class="contact">
+        <a class="gmail" href="mailto:evelyne.phich@gmail.com">
+            <img src="./images/email-24px.svg" alt="Email" />
+        </a>
+        <a target="_blank" class="linkedIn" href="https://www.linkedin.com/in/evelyne-phich-26464370/">
+            <img src="./images/iconmonstr-linkedin-3.svg" alt="LinkedIn" />
+        </a>
+        <a target="_blank" class="gitHub" href="https://github.com/evelyne-phich">
+            <img src="./images/Octicons-mark-github.svg" alt="GitHub" />
+        </a>
+    </div>
+</nav>

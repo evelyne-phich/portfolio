@@ -14,26 +14,7 @@
 
 <body>
     <div class="background">
-      <div id="backgroundClosingSideNav" onclick="closeSideNav()"></div>
-      <%- include("./partials/sideNav") -%>
-      <nav class="navBar">
-        <div class="navigation">
-          <button name="menuButton" class="menuButton" onclick="openSideNav()">
-            <img class="menuIcon" src="/images/menu-24px.svg" alt="menuIcon"/>
-          </button>
-        </div>
-        <div class="contact">
-          <a class="gmail" href="mailto:evelyne.phich@gmail.com">
-            <img src="/images/email-24px.svg" alt="Email"
-          /></a>
-          <a
-            target="_blank"
-            class="linkedIn"
-            href="https://www.linkedin.com/in/evelyne-phich-26464370/"
-            ><img src="/images/iconmonstr-linkedin-3.svg" alt="LinkedIn"
-          /></a>
-        </div>
-      </nav>
+      <%- include("./partials/sideNav-navBar") -%>
       <div class="projectsContainer">
         <% for (const project of projects) { %>
           <div class="container">
