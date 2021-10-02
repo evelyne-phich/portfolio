@@ -5,9 +5,11 @@ const careers = [
     companyNameColor: "#09B99E",
     jobName: "Formation développeur fullstack JS",
     jobTasks: [
-      "3 mois de socle : HTML, CSS, JavaScript, Node.js, Postgres, Git",
-      "1 mois de spécialisation : React",
-      "1 mois de projet professionnel",
+      "3 mois de socle :",
+      "HTML - CSS - JavaScript - Node.js - Postgres - Git - méthodes Agile - mise en production",
+      "1 mois de spécialisation :",
+      "React",
+      "1 mois de projet professionnel en équipe",
     ],
   },
   {
