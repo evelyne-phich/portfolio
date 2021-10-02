@@ -41,11 +41,14 @@
   color: white;
   padding: 24px;
 }
-.companyName,
-.projectName {
+.companyName {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 40px;
+}
+.projectName {
+  font-size: 40px;
+  font-weight: 700;
 }
 .linkToProject {
   transition: color .2s;
