@@ -104,11 +104,13 @@ button {
 .sideNav li a.active {
   background-color: rgb(199 208 255 / 65%);
   color: rgb(2, 2, 51);
+  border-radius: 16px;
 }
 li a:hover:not(.active) {
   background-color: #ffffffee;
   transition: 0.3s;
   color: rgb(2, 2, 51);
+  border-radius: 16px;
 }
 .backgroundClosingSideNav {
   height: 100vh;
