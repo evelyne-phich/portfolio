@@ -92,10 +92,12 @@
   .date {
     font-size: 24px;
   }
-  .companyName,
-  .projectName {
+  .companyName {
     font-size: 18px;
     margin-bottom: 25px;
+  }
+  .projectName {
+    font-size: 18px;
   }
   .jobName,
   .description,
