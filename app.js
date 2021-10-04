@@ -9,7 +9,7 @@ const app = express();
 app.use(express.static(__dirname + "/public"));
 app.use(router);
 
-app.set("views", "./views");
+app.set("views", "./app/views");
 app.set("view engine", "ejs");
 
 app.listen(PORT, () => {
