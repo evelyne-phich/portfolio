@@ -2,7 +2,7 @@ const express = require("express");
 
 const router = express.Router();
 
-const { careers, projects } = require("./database/data");
+const { careers, projects } = require("../database/data");
 
 // Accueil
 router.get("/", (request, response) => {
