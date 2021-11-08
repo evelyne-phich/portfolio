@@ -82,7 +82,7 @@ const careers = [
 
 const projects = [
   {
-    date: "02/2021",
+    date: "10/2021",
     projectName: "Les bonnes recettes d'Evy",
     projectNameColor: "rgb(182, 7, 65)",
     linkToProject: "https://les-bonnes-recettes-d-evy.herokuapp.com/",
