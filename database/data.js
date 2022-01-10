@@ -82,6 +82,12 @@ const careers = [
 
 const projects = [
   {
+    date: "01/2022",
+    projectName: "Chatroom",
+    projectNameColor: "#0F4C75",
+    linkToProject: "https://chatroom-d-evy.herokuapp.com/",
+  },
+  {
     date: "10/2021",
     projectName: "Les bonnes recettes d'Evy",
     projectNameColor: "rgb(182, 7, 65)",
