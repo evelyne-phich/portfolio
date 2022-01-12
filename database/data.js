@@ -88,6 +88,12 @@ const projects = [
     linkToProject: "https://chatroom-d-evy.herokuapp.com/",
   },
   {
+    date: "12/2021",
+    projectName: "To-do list",
+    projectNameColor: "#1A5D4A",
+    linkToProject: "https://to-do-list-d-evy.surge.sh/",
+  },
+  {
     date: "10/2021",
     projectName: "Les bonnes recettes d'Evy",
     projectNameColor: "rgb(182, 7, 65)",
