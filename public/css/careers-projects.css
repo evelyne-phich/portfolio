@@ -67,7 +67,16 @@
   padding: 0;
   margin: 0;
   font-size: 18px;
-  line-height: 1.5;
+}
+.project {
+  text-decoration: none;
+  color: #2b5d62;
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+.project:hover {
+  color: #5E8C7F;
 }
 .school {
   font-size: 40px;
@@ -108,6 +117,9 @@
   }
   .jobTasks {
     font-size: 14px;
+  }
+  .project {
+    font-size: 18px;
   }
   .school {
     font-size: 18px;

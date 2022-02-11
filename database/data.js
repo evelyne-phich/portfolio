@@ -9,8 +9,9 @@ const careers = [
       "HTML - CSS - JavaScript - Node.js - Postgres - Git - méthodes Agile - mise en production",
       "1 mois de spécialisation :",
       "React",
-      "1 mois de projet professionnel en équipe",
+      "1 mois de projet professionnel en équipe :",
     ],
+    project: "O'My Plant",
   },
   {
     date: "09/2019 - 06/2021",

@@ -29,6 +29,9 @@
                   <li><%= task %></li><br>
                 <% } %>
               </ul>
+              <% if (typeof career.project !== "undefined") { %>
+                <a class="project" target="_blank" href="https://o-my-plant.surge.sh/"><%= career.project %></a>
+              <% } %>
               <% if (typeof career.school !== "undefined" || typeof career.degree !== "undefined") {%>
               <div class="school"><%= career.school %></div>
               <div class="degree"><%= career.degree %></div>
