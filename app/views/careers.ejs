@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/careers-projects.css" />
+    <title>Evelyne PHICH</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+  <body>
+    <div class="background">
+      <%- include("./partials/sideNav-navBar") -%>
+      <div class="careersContainer">
+        <% for (const career of careers) { %>
+          <div class="container">
+            <div class="date"><%= career.date %></div>
+            <div class="content">
+              <div class="companyName" style="color: <%= career.companyNameColor %>">
+                <%= career.companyName %>
+              </div>
+              <div class="jobName"><%= career.jobName %></div>
+              <ul class="jobTasks">
+                <% for (const task of career.jobTasks) { %>
+                  <li><%= task %></li><br>
+                <% } %>
+              </ul>
+              <% if (typeof career.project !== "undefined") { %>
+                <a class="project" target="_blank" href="https://o-my-plant.surge.sh/"><%= career.project %></a>
+              <% } %>
+              <% if (typeof career.school !== "undefined" || typeof career.degree !== "undefined") {%>
+              <div class="school"><%= career.school %></div>
+              <div class="degree"><%= career.degree %></div>
+              <% } %>
+            </div>
+          </div>
+        <% } %>
+      </div>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
