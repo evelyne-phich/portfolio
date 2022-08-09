@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/Poppins-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/Poppins-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/Poppins-Medium.ttf);
+    font-weight: 500;
+}
