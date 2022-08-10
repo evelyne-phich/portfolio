@@ -1,13 +1,12 @@
 import style from "./index.module.scss";
 
-import { Title } from "components/Title";
+import { Section } from "components/Section";
 import { Text } from "components/Text";
 import { ArrowDown } from "components/Icons/ArrowDown";
 
 export const AboutMe = () => {
   return (
-    <div id="aboutMe">
-      <Title>ABOUT ME</Title>
+    <Section id="aboutMe" title="ABOUT ME">
       <img
         src="https://res.cloudinary.com/dvpcjyb48/image/upload/c_scale,w_300/v1660056581/IMG_20220805_233419_026_c3acff.jpg"
         alt="Me"
@@ -34,6 +33,6 @@ export const AboutMe = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
