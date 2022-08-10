@@ -1,0 +1,33 @@
+.burgerButton {
+  width: 36px;
+  cursor: pointer;
+}
+
+.burgerButton:before,
+.burgerButton:after,
+.burgerButton div {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  margin: 7px 0;
+  transition: 0.5s;
+}
+
+.burgerButtonClosed {
+  &.burgerButton:before {
+    transform: translateY(13px) rotate(135deg);
+  }
+}
+
+.burgerButtonClosed {
+  &.burgerButton:after {
+    transform: translateY(-13px) rotate(-135deg);
+  }
+}
+.burgerButtonClosed {
+  &.burgerButton div {
+    transform: scale(0);
+  }
+}
