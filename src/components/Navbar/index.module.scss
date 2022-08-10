@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f1f6f8;
+  background-color: #21273d;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 8px 24px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+  gap: 12px;
+}
+
+.menuItem {
+  font-weight: bold;
+}
