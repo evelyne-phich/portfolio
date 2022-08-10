@@ -8,6 +8,10 @@
   background-color: vars.$navy;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 8px 24px;
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  box-sizing: border-box;
 }
 
 .title {
@@ -20,21 +24,29 @@
 }
 
 .menuItem {
+  text-decoration: none;
+  color: vars.$lightGray;
   font-weight: bold;
   cursor: pointer;
 }
 
+.menuOpen,
 .menuClosed {
-  display: none;
-}
-
-.menuOpen {
+  position: fixed;
+  width: 100%;
+  top: 64px;
   text-align: center;
   background-color: vars.$lightGray;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.menuOpen .menuItem {
+.menuClosed {
+  top: -240px;
+}
+
+.menuOpen .menuItem,
+.menuClosed .menuItem {
+  display: block;
   padding: 12px 0;
   color: vars.$navy;
 }
