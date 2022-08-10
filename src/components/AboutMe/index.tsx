@@ -9,7 +9,7 @@ export const AboutMe = () => {
     <>
       <Title>ABOUT ME</Title>
       <img
-        src="https://res.cloudinary.com/dvpcjyb48/image/upload/c_scale,w_400/v1660056581/IMG_20220805_233419_026_c3acff.jpg"
+        src="https://res.cloudinary.com/dvpcjyb48/image/upload/c_scale,w_300/v1660056581/IMG_20220805_233419_026_c3acff.jpg"
         alt="Me"
         className={style.image}
       />
