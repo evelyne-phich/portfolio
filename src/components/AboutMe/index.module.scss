@@ -2,7 +2,13 @@
   display: none;
 }
 
-.doubleArrowDown {
+.arrowDownContainer {
+  position: relative;
+}
+
+.arrowDown {
+  position: absolute;
+  width: 100%;
   text-align: center;
   animation: jumpInfinite 1.5s infinite;
   cursor: pointer;
@@ -10,17 +16,17 @@
 
 @keyframes jumpInfinite {
   0% {
-    padding-top: 0;
+    top: 0;
   }
   50% {
-    padding-top: 20px;
+    top: 20px;
   }
   100% {
-    padding-top: 0px;
+    top: 0px;
   }
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 370px) {
   .image {
     border-radius: 20px;
     display: block;
