@@ -72,6 +72,12 @@ export const Navbar = () => {
           CONTACT ME
         </a>
       </nav>
+      {isBurgerMenuOpen && (
+        <div
+          className={style.closeMenuDiv}
+          onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}
+        ></div>
+      )}
     </>
   );
 };
