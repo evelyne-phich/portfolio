@@ -11,11 +11,21 @@ export const Navbar = () => {
       <nav className={style.navbar}>
         <div className={style.title}>Evelyne PHICH</div>
         <div className={style.desktopMenu}>
-          <div className={style.menuItem}>ABOUT ME</div>
-          <div className={style.menuItem}>MY CAREER</div>
-          <div className={style.menuItem}>MY PROJECTS</div>
-          <div className={style.menuItem}>MY STACK</div>
-          <div className={style.menuItem}>CONTACT ME</div>
+          <a href="#aboutMe" className={style.menuItem}>
+            ABOUT ME
+          </a>
+          <a href="#myCareer" className={style.menuItem}>
+            MY CAREER
+          </a>
+          <a href="#myProjects" className={style.menuItem}>
+            MY PROJECTS
+          </a>
+          <a href="#myStack" className={style.menuItem}>
+            MY STACK
+          </a>
+          <a href="#contactMe" className={style.menuItem}>
+            CONTACT ME
+          </a>
         </div>
         <div
           className={style.mobileMenu}
@@ -25,11 +35,41 @@ export const Navbar = () => {
         </div>
       </nav>
       <nav className={isBurgerMenuOpen ? style.menuOpen : style.menuClosed}>
-        <div className={style.menuItem}>ABOUT ME</div>
-        <div className={style.menuItem}>MY CAREER</div>
-        <div className={style.menuItem}>MY PROJECTS</div>
-        <div className={style.menuItem}>MY STACK</div>
-        <div className={style.menuItem}>CONTACT ME</div>
+        <a
+          href="#aboutMe"
+          className={style.menuItem}
+          onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}
+        >
+          ABOUT ME
+        </a>
+        <a
+          href="#myCareer"
+          className={style.menuItem}
+          onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}
+        >
+          MY CAREER
+        </a>
+        <a
+          href="#myProjects"
+          className={style.menuItem}
+          onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}
+        >
+          MY PROJECTS
+        </a>
+        <a
+          href="#myStack"
+          className={style.menuItem}
+          onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}
+        >
+          MY STACK
+        </a>
+        <a
+          href="#contactMe"
+          className={style.menuItem}
+          onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}
+        >
+          CONTACT ME
+        </a>
       </nav>
     </>
   );
