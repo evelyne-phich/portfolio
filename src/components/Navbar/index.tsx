@@ -1,6 +1,7 @@
 import style from "./index.module.scss";
 
 import { useState } from "react";
+
 import { BurgerMenuButton } from "components/BurgerMenuButton";
 
 export const Navbar = () => {
