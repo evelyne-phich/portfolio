@@ -25,7 +25,7 @@ export const AboutMe = () => {
         changing path and starting a new journey as a software engineer.
         <br />
       </Text>
-      <div>
+      <div className={style.scrollDownContainer}>
         <Text>Scroll down to know more about me !</Text>
         <div className={style.arrowDownContainer}>
           <div className={style.arrowDown}>
