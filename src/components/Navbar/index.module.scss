@@ -30,6 +30,14 @@
   color: vars.$lightGray;
   font-weight: bold;
   cursor: pointer;
+  padding: 20px 10px;
+  transition: 300ms ease-in-out;
+}
+
+.menuItem:hover {
+  background-color: vars.$gray;
+  color: vars.$navy;
+  padding: 20px 10px;
 }
 
 .menuOpen,
