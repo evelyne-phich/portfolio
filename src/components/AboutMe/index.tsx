@@ -14,7 +14,8 @@ export const AboutMe = () => {
       />
       <Text>
         Hello !
-        <br />I am <strong>Evelyne PHICH</strong>.
+        <br />
+        I'm <strong>Evelyne PHICH</strong>.
         <br />
         I used to work in accounting for 8 years in various companies and
         different positions, but I've always been attracted to software
