@@ -17,8 +17,8 @@ export const AboutMe = () => {
         <br />
         I'm <strong>Evelyne PHICH</strong>.
         <br />
-        I used to work in accounting for 8 years in various companies and
-        different positions, but I've always been attracted to software
+        I used to work in accounting for 8 years for various companies and in
+        several positions, but I've always been attracted to software
         development.
         <br />
         In 2021 I felt it was the right time to set myself this challenge :
