@@ -1,0 +1,43 @@
+@use "_vars.scss";
+
+.careerCard {
+  border: 2px solid vars.$navy;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: vars.$navy;
+  padding: 24px;
+  margin-bottom: 36px;
+  box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px,
+    rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+  background-color: white;
+  z-index: 1;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.date {
+  color: vars.$green;
+  margin-top: 0;
+}
+
+.title {
+  margin: 0;
+}
+
+.position {
+  font-size: 18px;
+}
+
+.description {
+  margin: 0;
+}
+
+@media screen and (min-width: 540px) {
+  .careerCard {
+    width: 485px;
+  }
+}

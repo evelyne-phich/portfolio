@@ -1,15 +1,13 @@
-import style from "./index.module.scss";
-
-import { AboutMe } from "components/AboutMe";
 import { Navbar } from "components/Navbar";
+import { AboutMe } from "components/AboutMe";
+import { MyCareer } from "components/MyCareer";
 
 export const App = () => {
   return (
     <>
       <Navbar />
-      <div className={style.container}>
-        <AboutMe />
-      </div>
+      <AboutMe />
+      <MyCareer />
     </>
   );
 };
