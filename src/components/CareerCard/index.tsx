@@ -7,7 +7,7 @@ type Props = {
   title2?: string;
   position2?: string;
   detail?: string;
-  children?: ReactNode;
+  children: ReactNode;
 };
 
 export const CareerCard = ({
@@ -23,9 +23,11 @@ export const CareerCard = ({
       <h3 className={style.title}>{title}</h3>
       <p className={style.position}>{position}</p>
       <ul className={style.description}>{children}</ul>
-      <h3 className={style.title}>{title2}</h3>
-      <p className={style.position}>{position2}</p>
-      <p className={style.detail}>{detail}</p>
+      {title2 && (
+        <h3 className={`${style.title} ${style.withSpacing}`}>{title2}</h3>
+      )}
+      {position2 && <p className={style.position}>{position2}</p>}
+      {detail && <p className={style.detail}>{detail}</p>}
     </div>
   );
 };
