@@ -29,9 +29,9 @@ export const AboutMe = () => {
       <div className={style.scrollDownContainer}>
         <Text>Scroll down to know more about me !</Text>
         <div className={style.arrowDownContainer}>
-          <div className={style.arrowDown}>
+          <a href="#myCareer" className={style.arrowDown}>
             <ArrowDown />
-          </div>
+          </a>
         </div>
       </div>
     </Section>
