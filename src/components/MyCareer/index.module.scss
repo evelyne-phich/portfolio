@@ -1,0 +1,30 @@
+@use "_vars.scss";
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background-color: vars.$navy;
+}
+
+.date {
+  color: vars.$green;
+  margin-top: 0;
+  z-index: 1;
+  background-color: vars.$gray;
+  padding: 8px 0;
+  margin-bottom: 36px;
+}
+
+.link {
+  text-decoration: none;
+  color: vars.$navy;
+  font-weight: bold;
+}
