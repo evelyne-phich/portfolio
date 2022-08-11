@@ -25,6 +25,11 @@
 
 .link {
   text-decoration: none;
-  color: vars.$navy;
+  color: #5584ac;
   font-weight: bold;
+  transition: 300ms ease-in-out;
+
+  &:hover {
+    color: vars.$linkHover;
+  }
 }

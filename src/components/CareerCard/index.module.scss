@@ -19,21 +19,29 @@
   }
 }
 
-.date {
-  color: vars.$green;
-  margin-top: 0;
-}
-
 .title {
   margin: 0;
+
+  &:last-of-type {
+    margin-top: 24px;
+  }
 }
 
 .position {
   font-size: 18px;
+  font-weight: bold;
+  color: vars.$blue;
+  text-align: center;
 }
 
 .description {
   margin: 0;
+}
+
+.detail {
+  margin: 0;
+  margin-top: -14px;
+  color: vars.$blue;
 }
 
 @media screen and (min-width: 540px) {
