@@ -35,7 +35,7 @@
 }
 
 .menuItem:hover {
-  background-color: vars.$lightBlue;
+  background-color: vars.$lightGray;
   color: vars.$navy;
   padding: 20px 10px;
 }
@@ -69,7 +69,7 @@
 }
 
 .menuOpen .menuItem:hover {
-  background-color: vars.$lightBlue;
+  background-color: vars.$gray;
 }
 
 .closeMenuDiv {
@@ -103,6 +103,10 @@
   }
 
   .menuOpen {
+    display: none;
+  }
+
+  .closeMenuDiv {
     display: none;
   }
 }
