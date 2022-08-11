@@ -32,12 +32,12 @@
   cursor: pointer;
   padding: 20px 10px;
   transition: 300ms ease-in-out;
-}
 
-.menuItem:hover {
-  background-color: vars.$lightGray;
-  color: vars.$navy;
-  padding: 20px 10px;
+  &:hover {
+    background-color: vars.$lightGray;
+    color: vars.$navy;
+    padding: 20px 10px;
+  }
 }
 
 .menuOpen,
