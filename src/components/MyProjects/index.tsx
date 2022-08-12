@@ -39,7 +39,7 @@ export const MyProjects = () => {
           icon={<RestaurantIcon />}
           title="Les bonnes adresses d'Evy"
           date="11/2020"
-          description="The first web app I ever coded that made me want to become a software enginner ! It gathers some good places where I've been eating that deserve to be shared."
+          description="The first web app I ever coded that made me want to become a software engineer ! It gathers some good places where I've been eating that deserve to be shared."
           projectLink="https://les-bonnes-adresses-d-evy.herokuapp.com/"
           gitHubLink="https://github.com/evelyne-phich/Les-bonnes-adresses-d-Evy"
         />
