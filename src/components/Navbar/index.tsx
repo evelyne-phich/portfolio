@@ -10,7 +10,9 @@ export const Navbar = () => {
   return (
     <>
       <nav className={style.navbar}>
-        <div className={style.title}>Evelyne PHICH</div>
+        <a href="#aboutMe" className={style.title}>
+          Evelyne PHICH
+        </a>
         <div className={style.desktopMenu}>
           <a href="#aboutMe" className={style.menuItem}>
             ABOUT ME
