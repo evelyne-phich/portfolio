@@ -36,11 +36,12 @@
 
 .links {
   display: flex;
-  gap: 12px;
+  gap: 36px;
 }
 
 .links a {
   color: vars.$link;
+  transition: 300ms ease-in-out;
 
   &:hover {
     color: vars.$linkHover;
