@@ -12,6 +12,7 @@
   flex-direction: column;
   align-items: center;
   color: vars.$navy;
+  max-width: 485px;
   padding: 24px;
   box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px,
     rgb(0 0 0 / 30%) 0px 3px 7px -3px;
@@ -51,10 +52,4 @@
 .isVisible {
   top: 0;
   opacity: 1;
-}
-
-@media screen and (min-width: 540px) {
-  .careerCard {
-    width: 485px;
-  }
 }
