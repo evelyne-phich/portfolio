@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .image {
   display: none;
 }
@@ -30,11 +36,29 @@
   }
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 300px) {
   .image {
-    border-radius: 20px;
     display: block;
-    margin: 0 auto;
+    border-radius: 20px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  }
+
+  .textContainer {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .image {
+    margin-right: 36px;
+  }
+
+  .textContainer {
+    margin-top: 0;
+    max-width: 600px;
   }
 }
