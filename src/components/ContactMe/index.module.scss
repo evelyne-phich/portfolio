@@ -1,0 +1,15 @@
+@use "_vars.scss";
+
+.container {
+  display: flex;
+  gap: 36px;
+}
+
+.container a {
+  color: vars.$link;
+  transition: 300ms ease-in-out;
+
+  &:hover {
+    color: vars.$linkHover;
+  }
+}
