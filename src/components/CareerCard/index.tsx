@@ -1,8 +1,8 @@
 import style from "./index.module.scss";
 
-import { ReactNode, useEffect, useRef, useState } from "react";
+import { ReactNode, useRef } from "react";
 
-const options = { root: null, rootMargin: "0px", threshold: 1 };
+import { useIsVisible } from "services/hooks";
 
 type Props = {
   title: string;
@@ -21,25 +21,9 @@ export const CareerCard = ({
   detail,
   children,
 }: Props) => {
-  const [isVisible, setIsVisible] = useState<boolean>(false);
-
-  const startAnimation: IntersectionObserverCallback = (entries) => {
-    setIsVisible(entries[0].isIntersecting);
-  };
-
   const careerCardRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(startAnimation, options);
-
-    if (careerCardRef.current) {
-      observer.observe(careerCardRef.current);
-    }
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  const isVisible = useIsVisible(careerCardRef);
 
   return (
     <div className={style.container} ref={careerCardRef}>
