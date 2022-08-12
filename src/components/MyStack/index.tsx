@@ -13,7 +13,7 @@ import { TypeScriptIcon } from "components/Icons/TypeScriptIcon";
 
 export const MyStack = () => {
   return (
-    <Section id="MyStack" title="MY STACK" backgroundColor>
+    <Section id="myStack" title="MY STACK" backgroundColor>
       <div className={style.container}>
         <Stack stackIcon={<HtmlIcon />} stackName="HTML 5" />
         <Stack stackIcon={<CssIcon />} stackName="CSS 3" />
