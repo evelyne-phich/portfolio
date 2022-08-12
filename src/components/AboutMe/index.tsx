@@ -2,7 +2,7 @@ import style from "./index.module.scss";
 
 import { Section } from "components/Section";
 import { Text } from "components/Text";
-import { ArrowDown } from "components/Icons/ArrowDown";
+import { ArrowDownIcon } from "components/Icons/ArrowDownIcon";
 
 export const AboutMe = () => {
   return (
@@ -30,7 +30,7 @@ export const AboutMe = () => {
         <Text>Scroll down to know more about me !</Text>
         <div className={style.arrowDownContainer}>
           <a href="#myCareer" className={style.arrowDown}>
-            <ArrowDown />
+            <ArrowDownIcon />
           </a>
         </div>
       </div>
