@@ -24,7 +24,7 @@ export const AboutMe = () => {
             <br />
             In 2021 I felt it was the right time to set myself this challenge :
             <br />
-            changing path and starting a new journey as a software engineer.
+            change path to start a new journey as a software engineer.
             <br />
           </p>
         </div>
