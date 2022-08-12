@@ -1,7 +1,6 @@
 import style from "./index.module.scss";
 
 import { Section } from "components/Section";
-import { Text } from "components/Text";
 import { ArrowDownIcon } from "components/Icons/ArrowDownIcon";
 
 export const AboutMe = () => {
