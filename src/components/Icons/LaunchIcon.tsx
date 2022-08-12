@@ -4,10 +4,22 @@ type Props = {
 
 export const LaunchIcon = ({ color = "currentColor" }: Props) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
-      <path d="M0 0h24v24H0z" fill="none" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+    >
       <path
-        d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+        d="M19,21H5c-1.1,0-2-0.9-2-2V5c0-1.1,0.9-2,2-2h7v2H5v14h14v-7h2v7C21,20.1,20.1,21,19,21z"
+        fill={color}
+      />
+      <path d="M21 10L19 10 19 5 14 5 14 3 21 3z" fill={color} />
+      <path
+        d="M6.7 8.5H22.3V10.5H6.7z"
+        transform="rotate(-45.001 14.5 9.5)"
         fill={color}
       />
     </svg>
