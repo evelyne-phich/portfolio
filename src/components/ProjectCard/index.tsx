@@ -25,8 +25,8 @@ export const ProjectCard = ({
   return (
     <div className={style.projectCard}>
       {icon}
-      <h3 className={style.title}>{title}</h3>
-      <p className={style.date}>{date}</p>
+      <h2 className={style.title}>{title}</h2>
+      <h3 className={style.date}>{date}</h3>
       <p className={style.description}>{description}</p>
       <div className={style.links}>
         <a href={projectLink} target="_blank" rel="noopener noreferrer">

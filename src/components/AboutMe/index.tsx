@@ -13,8 +13,8 @@ export const AboutMe = () => {
           alt="Me"
           className={style.image}
         />
-        <div className={style.textContainer}>
-          <Text>
+        <div className={style.descriptionContainer}>
+          <p className={style.description}>
             Hello !
             <br />
             I'm <strong>Evelyne PHICH</strong>.
@@ -27,11 +27,11 @@ export const AboutMe = () => {
             <br />
             changing path and starting a new journey as a software engineer.
             <br />
-          </Text>
+          </p>
         </div>
       </div>
       <div className={style.scrollDownContainer}>
-        <Text>Scroll down to know more about me !</Text>
+        <p>Scroll down to know more about me !</p>
         <div className={style.arrowDownContainer}>
           <a href="#myCareer" className={style.arrowDown}>
             <ArrowDownIcon />
