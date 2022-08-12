@@ -17,6 +17,8 @@
 }
 
 .title {
+  text-decoration: none;
+  color: vars.$lightGray;
   font-weight: 800;
   font-size: 1.5rem;
 }
