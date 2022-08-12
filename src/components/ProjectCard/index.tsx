@@ -1,6 +1,7 @@
 import style from "./index.module.scss";
 
 import { ReactNode } from "react";
+
 import { LaunchIcon } from "components/Icons/LaunchIcon";
 import { GitHubIcon } from "components/Icons/GitHubIcon";
 
