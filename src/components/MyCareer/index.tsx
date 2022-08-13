@@ -34,7 +34,7 @@ export const MyCareer = () => {
           <li>
             1 month of project in a team of 5 people :
             <br />
-            <strong>O'My Plant</strong> - A web app helping users to handle
+            <strong>O'My Plant</strong> - A web app that helps users to handle
             plant care
             <br />
             <a
