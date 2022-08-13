@@ -4,7 +4,7 @@ export type TagType = {
 }
 
 export const tags : {[key: string]: TagType} = {
-    javascript: {
+    javaScript: {
         label: 'JavaScript',
         color: "#FBCB0A"
     },

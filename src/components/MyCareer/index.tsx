@@ -2,6 +2,7 @@ import style from "./index.module.scss";
 
 import { CareerCard } from "components/CareerCard";
 import { Section } from "components/Section";
+import { tags } from "components/Tags/index.services";
 
 export const MyCareer = () => {
   return (
@@ -9,7 +10,11 @@ export const MyCareer = () => {
       <div className={style.container}>
         <div className={style.timeline}></div>
         <h2 className={style.date}>Present</h2>
-        <CareerCard title="Dalma" position="Frontend engineer">
+        <CareerCard
+          title="Dalma"
+          position="Frontend engineer"
+          tags={[tags.javaScript, tags.react]}
+        >
           <li>Conception and implementation of features</li>
           <li>Testing and deployment</li>
           <li>Documentation and maintenance</li>
