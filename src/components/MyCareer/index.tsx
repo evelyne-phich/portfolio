@@ -32,7 +32,7 @@ export const MyCareer = () => {
             React
           </li>
           <li>
-            1 month of team project with 5 people :
+            1 month of project in a team of 5 people :
             <br />
             <strong>O'My Plant</strong> - A web app helping users to handle
             plant care
