@@ -3,6 +3,7 @@ import { ListIcon } from "components/Icons/ListIcon";
 import { PlantIcon } from "components/Icons/PlantIcon";
 import { RamenIcon } from "components/Icons/RamenIcon";
 import { RestaurantIcon } from "components/Icons/RestaurantIcon";
+import { tags } from "components/Tags/index.services";
 
 export const projects = [
   {
@@ -13,6 +14,14 @@ export const projects = [
       "End-of-course project at O'clock in a team of 5 people : a web app that helps users to handle plant care.",
     projectLink: "https://o-my-plant.surge.sh/",
     gitHubLink: "https://github.com/O-clock-XIII/projet-10-o-my-plant",
+    tags: [
+      tags.javascript,
+      tags.react,
+      tags.redux,
+      tags.nodeJs,
+      tags.express,
+      tags.postgreSql,
+    ],
   },
   {
     icon: <ChatIcon />,
@@ -22,6 +31,7 @@ export const projects = [
       "A chatroom web app that allows users to connect and send messages.",
     projectLink: "https://chatroom-d-evy.herokuapp.com/",
     gitHubLink: "https://github.com/evelyne-phich/chatroom",
+    tags: [tags.javascript, tags.react, tags.redux],
   },
   {
     icon: <ListIcon />,
@@ -31,6 +41,7 @@ export const projects = [
       "A simple to-do list web app that allows users to add, follow and delete tasks.",
     projectLink: "https://to-do-list-d-evy.surge.sh/",
     gitHubLink: "https://github.com/evelyne-phich/to-do-list",
+    tags: [tags.javascript, tags.react],
   },
   {
     icon: <RamenIcon />,
@@ -40,6 +51,13 @@ export const projects = [
       "A web app that stores some of my favorite recipes, so that I can find them easily whenever I want to cook or share them.",
     projectLink: "https://les-bonnes-recettes-d-evy.herokuapp.com/",
     gitHubLink: "https://github.com/evelyne-phich/les-bonnes-recettes-d-evy",
+    tags: [
+      tags.javascript,
+      tags.ejs,
+      tags.nodeJs,
+      tags.express,
+      tags.postgreSql,
+    ],
   },
   {
     icon: <RestaurantIcon />,
@@ -49,5 +67,6 @@ export const projects = [
       "The first web app I ever coded that made me want to become a software engineer ! It gathers some good places where I've been eating that deserve to be shared.",
     projectLink: "https://les-bonnes-adresses-d-evy.herokuapp.com/",
     gitHubLink: "https://github.com/evelyne-phich/Les-bonnes-adresses-d-Evy",
+    tags: [tags.javascript, tags.ejs, tags.nodeJs, tags.express],
   },
 ];

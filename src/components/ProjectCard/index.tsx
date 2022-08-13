@@ -4,6 +4,8 @@ import { ReactNode } from "react";
 
 import { LaunchIcon } from "components/Icons/LaunchIcon";
 import { GitHubIcon } from "components/Icons/GitHubIcon";
+import { Tags } from "components/Tags";
+import { TagType } from "components/Tags/index.services";
 
 type Props = {
   icon: ReactNode;
@@ -12,6 +14,7 @@ type Props = {
   description: string;
   projectLink: string;
   gitHubLink: string;
+  tags: Array<TagType>;
 };
 
 export const ProjectCard = ({
@@ -21,6 +24,7 @@ export const ProjectCard = ({
   description,
   projectLink,
   gitHubLink,
+  tags,
 }: Props) => {
   return (
     <div className={style.projectCard}>
@@ -28,6 +32,7 @@ export const ProjectCard = ({
       <h2 className={style.title}>{title}</h2>
       <h3 className={style.date}>{date}</h3>
       <p className={style.description}>{description}</p>
+      <Tags tags={tags} />
       <div className={style.links}>
         <a href={projectLink} target="_blank" rel="noopener noreferrer">
           <LaunchIcon />
