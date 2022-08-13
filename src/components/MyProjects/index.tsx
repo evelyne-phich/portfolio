@@ -6,11 +6,20 @@ import { RestaurantIcon } from "components/Icons/RestaurantIcon";
 import { RamenIcon } from "components/Icons/RamenIcon";
 import { ListIcon } from "components/Icons/ListIcon";
 import { ChatIcon } from "components/Icons/ChatIcon";
+import { PlantIcon } from "components/Icons/PlantIcon";
 
 export const MyProjects = () => {
   return (
     <Section id="myProjects" title="MY PROJECTS">
       <div className={style.container}>
+        <ProjectCard
+          icon={<PlantIcon />}
+          title="O'My Plant"
+          date="01/2022"
+          description="End-of-course project at O'clock in a team of 5 people : a web app that helps users to handle plant care."
+          projectLink="https://o-my-plant.surge.sh/"
+          gitHubLink="https://github.com/O-clock-XIII/projet-10-o-my-plant"
+        />
         <ProjectCard
           icon={<ChatIcon />}
           title="Chatroom"
