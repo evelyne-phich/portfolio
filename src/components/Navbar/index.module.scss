@@ -21,6 +21,11 @@
   color: vars.$lightGray;
   font-weight: 800;
   font-size: 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: fit-content;
+  border-right: 4px solid vars.$gray;
+  animation: typing 5s steps(30, end) infinite, blink-caret 1s step-end infinite;
 }
 
 .desktopMenu {
@@ -81,6 +86,25 @@
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   z-index: 2;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: vars.$green;
+  }
 }
 
 @keyframes scaleDown {
