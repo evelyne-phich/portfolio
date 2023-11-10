@@ -13,12 +13,26 @@ export const MyCareer = () => {
         <CareerCard
           title="Dalma"
           position="Frontend engineer"
-          tags={[tags.javaScript, tags.react]}
+          tags={[
+            tags.javaScript,
+            tags.typeScript,
+            tags.react,
+            tags.reactNative,
+            tags.webflow,
+          ]}
         >
-          <li>Conception and implementation of features</li>
-          <li>Testing and deployment</li>
-          <li>Documentation and maintenance</li>
-          <li>Features priorization and release following Scrum method</li>
+          <li>
+            Conception, preparation and follow-up of sprints with Agile method
+          </li>
+          <li>
+            Revamp, development, maintenance and deployment of client spaces and
+            subscription flows
+          </li>
+          <li>
+            Development, maintenance and deployment of mobile applications
+          </li>
+          <li>Projects internationalization</li>
+          <li>Websites creation with Webflow</li>
         </CareerCard>
         <h2 className={style.date}>03/2022</h2>
         <CareerCard
