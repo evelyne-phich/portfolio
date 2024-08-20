@@ -1,13 +1,14 @@
 import style from "./index.module.scss";
 
 type Props = {
-  color: string;
   label: string;
+  backgroundColor: string;
+  color?: string;
 };
 
-export const Tag = ({ color, label }: Props) => {
+export const Tag = ({ label, backgroundColor, color }: Props) => {
   return (
-    <div className={style.container} style={{ backgroundColor: color }}>
+    <div className={style.container} style={{ backgroundColor, color }}>
       {label}
     </div>
   );

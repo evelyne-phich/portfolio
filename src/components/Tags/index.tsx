@@ -11,7 +11,11 @@ export const Tags = ({ tags }: Props) => {
   return (
     <div className={style.container}>
       {tags.map((tag) => (
-        <Tag color={tag.color} label={tag.label} />
+        <Tag
+          label={tag.label}
+          backgroundColor={tag.backgroundColor}
+          color={tag.color}
+        />
       ))}
     </div>
   );

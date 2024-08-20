@@ -1,47 +1,50 @@
 export type TagType = {
   label: string;
-  color: string;
+  backgroundColor: string;
+  color?: string;
 };
 
 export const tags: { [key: string]: TagType } = {
   javaScript: {
     label: "JavaScript",
-    color: "#FBCB0A",
+    backgroundColor: "#FBCB0A",
+    color: "black",
   },
   ejs: {
     label: "EJS",
-    color: "#A91F50",
+    backgroundColor: "#A91F50",
   },
   react: {
     label: "React",
-    color: "#7FB5FF",
+    backgroundColor: "#7FB5FF",
+    color: "black",
   },
   redux: {
     label: "Redux",
-    color: "#764abc",
+    backgroundColor: "#764abc",
   },
   nodeJs: {
     label: "Node.js",
-    color: "#215732",
+    backgroundColor: "#215732",
   },
   express: {
     label: "Express",
-    color: "#000000",
+    backgroundColor: "#000000",
   },
   postgreSql: {
     label: "PostgreSQL",
-    color: "#336790",
+    backgroundColor: "#336790",
   },
   typeScript: {
     label: "TypeScript",
-    color: "#2F73BF",
+    backgroundColor: "#2F73BF",
   },
   reactNative: {
     label: "React Native",
-    color: "#7FB5FF",
+    backgroundColor: "#7FB5FF",
   },
   webflow: {
     label: "Webflow",
-    color: "#000000",
+    backgroundColor: "#000000",
   },
 };

@@ -2,10 +2,26 @@ import { ChatIcon } from "components/Icons/ChatIcon";
 import { ListIcon } from "components/Icons/ListIcon";
 import { PlantIcon } from "components/Icons/PlantIcon";
 import { RamenIcon } from "components/Icons/RamenIcon";
-import { RestaurantIcon } from "components/Icons/RestaurantIcon";
 import { tags } from "components/Tags/index.services";
 
 export const projects = [
+  {
+    icon: <RamenIcon />,
+    title: "On cuisine quoi ?",
+    date: "08/2024",
+    description:
+      "A web app that stores some of my favorite recipes, so that I can find them easily whenever I want to cook or share them.",
+    projectLink: "https://on-cuisine-quoi.vercel.app/",
+    gitHubLink: "https://github.com/evelyne-phich/on-cuisine-quoi",
+    tags: [
+      tags.javaScript,
+      tags.typeScript,
+      tags.react,
+      tags.nodeJs,
+      tags.express,
+      tags.postgreSql,
+    ],
+  },
   {
     icon: <PlantIcon />,
     title: "O'My Plant",
@@ -42,31 +58,5 @@ export const projects = [
     projectLink: "https://to-do-list-d-evy.surge.sh/",
     gitHubLink: "https://github.com/evelyne-phich/to-do-list",
     tags: [tags.javaScript, tags.react],
-  },
-  {
-    icon: <RamenIcon />,
-    title: "Les bonnes recettes d'Evy",
-    date: "10/2021",
-    description:
-      "A web app that stores some of my favorite recipes, so that I can find them easily whenever I want to cook or share them.",
-    projectLink: "https://les-bonnes-recettes-d-evy.herokuapp.com/",
-    gitHubLink: "https://github.com/evelyne-phich/les-bonnes-recettes-d-evy",
-    tags: [
-      tags.javaScript,
-      tags.ejs,
-      tags.nodeJs,
-      tags.express,
-      tags.postgreSql,
-    ],
-  },
-  {
-    icon: <RestaurantIcon />,
-    title: "Les bonnes adresses d'Evy",
-    date: "11/2020",
-    description:
-      "The first web app I ever coded that made me want to become a software engineer ! It gathers some good places where I've been eating that deserve to be shared.",
-    projectLink: "https://les-bonnes-adresses-d-evy.herokuapp.com/",
-    gitHubLink: "https://github.com/evelyne-phich/Les-bonnes-adresses-d-Evy",
-    tags: [tags.javaScript, tags.ejs, tags.nodeJs, tags.express],
   },
 ];

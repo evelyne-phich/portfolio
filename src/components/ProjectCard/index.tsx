@@ -28,18 +28,22 @@ export const ProjectCard = ({
 }: Props) => {
   return (
     <div className={style.projectCard}>
-      {icon}
-      <h2 className={style.title}>{title}</h2>
-      <h3 className={style.date}>{date}</h3>
-      <p className={style.description}>{description}</p>
-      <Tags tags={tags} />
-      <div className={style.links}>
-        <a href={projectLink} target="_blank" rel="noopener noreferrer">
-          <LaunchIcon />
-        </a>
-        <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
-          <GitHubIcon />
-        </a>
+      <div className={style.section}>
+        {icon}
+        <h2 className={style.title}>{title}</h2>
+        <h3 className={style.date}>{date}</h3>
+        <p className={style.description}>{description}</p>
+      </div>
+      <div className={style.section}>
+        <Tags tags={tags} />
+        <div className={style.links}>
+          <a href={projectLink} target="_blank" rel="noopener noreferrer">
+            <LaunchIcon />
+          </a>
+          <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
+            <GitHubIcon />
+          </a>
+        </div>
       </div>
     </div>
   );
