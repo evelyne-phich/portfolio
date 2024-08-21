@@ -14,24 +14,24 @@ export const AboutMe = () => {
         />
         <div className={style.descriptionContainer}>
           <p className={style.description}>
-            Hello !
+            Hello!
             <br />
             I'm <strong>Evelyne PHICH</strong>.
             <br />
-            I used to work in accounting for 8 years for various companies and
-            in several positions, but I've always been attracted to software
-            development.
+            With eight years of experience in accounting, working across various
+            companies and roles, I’ve always been drawn to software development.
             <br />
-            In 2021 I felt it was the right time to set myself this challenge :
+            In 2021, I decided it was time to challenge myself by transitioning
+            into a new career as a <strong>software engineer</strong>.
             <br />
-            change path to start a new journey as a{" "}
-            <strong>software engineer</strong> !
-            <br />
+            Since then, I’ve been thriving in this dynamic field, which
+            continually evolves and offers endless opportunities for learning
+            and growth.
           </p>
         </div>
       </div>
       <div className={style.scrollDownContainer}>
-        <p>Scroll down to know more about me !</p>
+        <p>Scroll down to know more about me!</p>
         <div className={style.arrowDownContainer}>
           <a href="#myCareer" className={style.arrowDown}>
             <ArrowDownIcon />
