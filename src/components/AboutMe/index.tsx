@@ -8,7 +8,7 @@ export const AboutMe = () => {
     <Section id="aboutMe" title="ABOUT ME">
       <div className={style.container}>
         <img
-          src="https://res.cloudinary.com/dvpcjyb48/image/upload/c_scale,w_300/v1660056581/IMG_20220805_233419_026_c3acff.jpg"
+          src="https://res.cloudinary.com/dvpcjyb48/image/upload/c_scale,w_400/v1724240607/IMG_2421_swtmw1.jpg"
           alt="Me"
           className={style.image}
         />
