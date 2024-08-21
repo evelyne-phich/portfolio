@@ -11,8 +11,21 @@ export const MyCareer = () => {
         <div className={style.timeline}></div>
         <h2 className={style.date}>Present</h2>
         <CareerCard
+          title="Figaro Classifieds"
+          position="Frontend developer"
+          tags={[tags.javaScript, tags.typeScript, tags.vue]}
+        >
+          <li>
+            Conception, preparation and follow-up of sprints with Scrum Agile
+            method
+          </li>
+          <li>Development of new features to offer more innovative products</li>
+          <li>Rebuild of the Cadremploi website</li>
+        </CareerCard>
+        <h2 className={style.date}>06/2024</h2>
+        <CareerCard
           title="Dalma"
-          position="Frontend engineer"
+          position="Frontend developer"
           tags={[
             tags.javaScript,
             tags.typeScript,
@@ -22,17 +35,20 @@ export const MyCareer = () => {
           ]}
         >
           <li>
-            Conception, preparation and follow-up of sprints with Agile method
+            Conception, preparation and follow-up of sprints with Scrum Agile
+            method
           </li>
           <li>
-            Revamp, development, maintenance and deployment of client spaces and
-            subscription flows
+            Rebuild, development, maintenance and deployment of client spaces
+            and subscription flows
           </li>
           <li>
             Development, maintenance and deployment of mobile applications
           </li>
-          <li>Projects internationalization</li>
-          <li>Websites creation with Webflow</li>
+          <li>
+            Creation of landing pages and maintenance of the marketing website
+            with Webflow
+          </li>
         </CareerCard>
         <h2 className={style.date}>03/2022</h2>
         <CareerCard
@@ -67,7 +83,6 @@ export const MyCareer = () => {
           </li>
         </CareerCard>
         <h2 className={style.date}>08/2021</h2>
-        <h2 className={style.date}>06/2021</h2>
         <CareerCard title="LCL" position="Accountant analyst">
           <li>Inventory entries and corrections</li>
           <li>
@@ -90,7 +105,6 @@ export const MyCareer = () => {
           <li>Establishment of annual accounts and tax returns</li>
         </CareerCard>
         <h2 className={style.date}>11/2016</h2>
-        <h2 className={style.date}>08/2016</h2>
         <CareerCard
           title="Société Générale"
           position="Business controller"
@@ -120,6 +134,7 @@ export const MyCareer = () => {
           </li>
           <li>Monitoring of disputes and management of check deposit</li>
         </CareerCard>
+        <h2 className={style.date}>10/2013</h2>
       </div>
     </Section>
   );

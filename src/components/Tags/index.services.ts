@@ -42,9 +42,15 @@ export const tags: { [key: string]: TagType } = {
   reactNative: {
     label: "React Native",
     backgroundColor: "#7FB5FF",
+    color: "black",
   },
   webflow: {
     label: "Webflow",
     backgroundColor: "#000000",
+  },
+  vue: {
+    label: "Vue",
+    backgroundColor: "#42D392",
+    color: "black",
   },
 };
