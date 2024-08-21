@@ -2,17 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px;
-  width: 100px;
-  height: 100px;
 }
 
-.name {
-  margin: 0;
-}
-
-@media screen and (min-width: 420px) {
-  .container {
-    padding: 36px;
-  }
+.icon {
+  display: flex;
+  align-items: center;
+  width: 64px;
+  height: 64px;
 }

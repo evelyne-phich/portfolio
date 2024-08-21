@@ -9,8 +9,8 @@ type Props = {
 export const Stack = ({ stackIcon, stackName }: Props) => {
   return (
     <div className={style.container}>
-      {stackIcon}
-      <h2 className={style.name}>{stackName}</h2>
+      <div className={style.icon}>{stackIcon}</div>
+      <h2>{stackName}</h2>
     </div>
   );
 };
