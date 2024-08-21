@@ -39,11 +39,8 @@ export const MyCareer = () => {
             method
           </li>
           <li>
-            Rebuild, development, maintenance and deployment of client spaces
-            and subscription flows
-          </li>
-          <li>
-            Development, maintenance and deployment of mobile applications
+            Development, maintenance and deployment of subscription flows,
+            client spaces and mobile applications
           </li>
           <li>
             Creation of landing pages and maintenance of the marketing website
