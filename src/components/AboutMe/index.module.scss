@@ -2,10 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 36px;
 }
 
 .image {
-  display: none;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
 .description {
@@ -40,29 +43,12 @@
   }
 }
 
-@media screen and (min-width: 300px) {
-  .image {
-    display: block;
-    border-radius: 20px;
-    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-  }
-
-  .descriptionContainer {
-    margin-top: 32px;
-  }
-}
-
 @media screen and (min-width: 800px) {
   .container {
     flex-direction: row;
   }
 
-  .image {
-    margin-right: 36px;
-  }
-
   .descriptionContainer {
-    margin-top: 0;
     max-width: 600px;
   }
 }

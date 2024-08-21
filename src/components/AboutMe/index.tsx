@@ -13,21 +13,27 @@ export const AboutMe = () => {
           className={style.image}
         />
         <div className={style.descriptionContainer}>
-          <p className={style.description}>
-            Hello!
-            <br />
-            I'm <strong>Evelyne PHICH</strong>.
-            <br />
-            With eight years of experience in accounting, working across various
-            companies and roles, I’ve always been drawn to software development.
-            <br />
-            In 2021, I decided it was time to challenge myself by transitioning
-            into a new career as a <strong>software engineer</strong>.
-            <br />
-            Since then, I’ve been thriving in this dynamic field, which
-            continually evolves and offers endless opportunities for learning
-            and growth.
-          </p>
+          <div className={style.description}>
+            <p>Hello!</p>
+            <p>
+              I'm <strong>Evelyne PHICH</strong>.
+            </p>
+            <p>
+              With eight years of experience in accounting, working across
+              various companies and roles, I’ve always been drawn to software
+              development.
+            </p>
+            <p>
+              In 2021, I decided it was time to challenge myself by
+              transitioning into a new career as a{" "}
+              <strong>software engineer</strong>.
+            </p>
+            <p>
+              Since then, I’ve been thriving in this dynamic field, which
+              continually evolves and offers endless opportunities for learning
+              and growth.
+            </p>
+          </div>
         </div>
       </div>
       <div className={style.scrollDownContainer}>
